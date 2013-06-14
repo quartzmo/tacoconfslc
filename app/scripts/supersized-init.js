@@ -20,10 +20,10 @@ jQuery(function($){
         // Components
         slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
         slides             : [    // Slideshow Images
-                                 {image : 'images/backgrounds/1.jpg'},
-                                 {image : 'images/backgrounds/2.jpg'},
-                                 {image : 'images/backgrounds/3.jpg'},
-                                 {image : 'images/backgrounds/4.jpg'}
+                                 {image : 'images/backgrounds/7bf7b4e2.1.jpg'},
+                                 {image : 'images/backgrounds/6e134d10.2.jpg'},
+                                 {image : 'images/backgrounds/4aa2940d.3.jpg'},
+                                 {image : 'images/backgrounds/eac0c828.4.jpg'}
                              ]
 
     });
