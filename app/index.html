@@ -6,58 +6,71 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>TacoConf Salt Lake City</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Molle:400italic' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700'>
         <link rel="stylesheet" href="styles/main.css">
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
     </head>
     <body>
-        <div class="container">
-                <h1>TacoConf Salt Lake City</h1>
-                <p>
-                    <h2>The <i>Beta</i> Ride</h2>
-                </p>
+
+
+
+        <div class="page-container container-fluid">
+
+            <div class="progress">
+                <div class="bar" style="width: 0%;" data-percentage="52">
+                    <div>52%</div>
+                </div>
+            </div>
+
+            <div class="timer-container row-fluid">
+                <div class="span2"></div>
+                <div class="span8">
+                    <div class="pull-right mascot"></div>
+                    <h1>TacoConf Salt Lake City</h1>
+                    <h2>The Summer 2013 <i style="color: #54a8c0">Beta*</i> Ride</h2>
+                    <div class="timer">
+                        Countdown:
+                        <span class="days"></span> DAYS
+                        <span class="hours"></span> HOURS
+                        <span class="minutes"></span> MINUTES
+                        <span class="seconds"></span> SECONDS
+                    </div>
+                    <div class="about">
+                        <p><strong>What:</strong> Per the <a href="http://tacoconf.com/">original TacoConf</a>, the objective is to bicycle around Salt Lake City, learn about tacos and then eat them! </p>
+                        <p><strong>When:</strong> Saturday, June 22, 2013, 11:30 a.m.</p>
+                        <p><strong>Where:</strong> Take TRAX, FrontRunner, car or bike to meet at the <a href="http://greenbikeslc.org/">GREENbike</a> station at the SLC <a href="https://plus.google.com/109269384330750664361/about">Intermodal Hub</a>, 290 S 600 W</p>
+                        <p><strong>How:</strong> A bicycle is required. GREENbike availability will be limited and first-come, first-served.</p>
+                        <p><strong>Cost:</strong> Free to participate. Tacos are cheap, apart from any GREENbike charges, you probably just need $5-15 cash.</p>
+                        <p><strong>Info:</strong> Search and tweet to the <a class="twitter" href="https://twitter.com/search?q=%23tacoconfslc">#tacoconfslc</a> hashtag on Twitter</p>
+                        <p><strong>*Disclaimer:</strong> This is the first time we ever do this, and we'll be figuring it out as we go. Participation is of course at your own risk.</p>
+
+                    </div>
+                </div>
+                <div class="span2"></div>
+            </div>
+
+            <div class="social-container row-fluid">
+                <div class="span2"></div>
+                <div class="span6">
+                </div>
+                <div class="social-links span2">
+                    <a class="twitter" href="https://twitter.com/search?q=%23tacoconfslc"></a>
+                </div>
+                <div class="span2"></div>
+            </div>
+
         </div>
-
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="scripts/jquery.countdown.js"></script>
+        <script src="scripts/supersized.3.2.7.min.js"></script>
+        <script src="scripts/supersized-init.js"></script>
+        <script src="scripts/jquery.tweet.js"></script>
         <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/hello.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/sass-bootstrap/js/bootstrap-affix.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-alert.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-modal.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-transition.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-button.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-popover.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-carousel.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-collapse.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-tab.js"></script>
         <!-- endbuild -->
 </body>
 </html>
