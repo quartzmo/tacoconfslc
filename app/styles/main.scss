@@ -70,9 +70,9 @@ body {
 /* ----- Page title ----- */
 
 h1 {
-    margin: 40px 0 0 0;
-    font-size: 54px;
-    line-height: 54px;
+    margin: 48px 0 0 0;
+    font-size: 48px;
+    line-height: 44px;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 2px 6px rgba(0,0,0,.2);
@@ -85,8 +85,9 @@ a {
 }
 
 .mascot {
-  height: 160px;
-  width: 200px;
+  background: url(../images/taco_conf_guy.png) right center no-repeat;
+  height: 240px;
+  width: 300px;
 
 }
 
