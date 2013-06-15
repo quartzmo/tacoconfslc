@@ -54,11 +54,23 @@ body {
     padding: 0 0 40px 0;
 }
 
+.copy-container {
+}
+
+.about {
+  font-style: normal;
+  margin-top: 40px;
+}
+
+.findme {
+  background-color: yellow;
+}
+
 
 /* ----- Page title ----- */
 
 h1 {
-    margin: 80px 0 0 0;
+    margin: 40px 0 0 0;
     font-size: 60px;
     line-height: 66px;
     font-weight: bold;
@@ -119,7 +131,7 @@ a {
 
 .timer-container {
     margin: 0;
-    padding: 40px 0;
+    padding: 20px 0 40px 0;
     background: #2d2d2d; /* browsers that don't support rgba */
     background: rgba(45,45,45,.7);
     font-size: 18px;
@@ -139,6 +151,9 @@ a {
         0 -10px 50px 0 rgba(0,0,0,.2);
 }
 
+.timer-container .timer {
+  margin-top: 40px;
+}
 .timer-container .timer span {
     margin: 0 0 0 5px;
     font-size: 60px;
