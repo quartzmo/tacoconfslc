@@ -63,3 +63,44 @@ jQuery(document).ready(function() {
         return false;
     });
 });
+
+
+$.fn.serializeObject = function()
+{
+   var o = {};
+   var a = this.serializeArray();
+   $.each(a, function() {
+       if (o[this.name]) {
+           if (!o[this.name].push) {
+               o[this.name] = [o[this.name]];
+           }
+           o[this.name].push(this.value || '');
+       } else {
+           o[this.name] = this.value || '';
+       }
+   });
+   return o;
+};
+
+$(function () {
+  $('form button[type="submit"]').bind('click', function (event) {
+    if (event) event.preventDefault();
+
+    $.ajax({
+      type: 'POST',
+      url: "http://localhost:5000/subscribers",
+      data: JSON.stringify($(this).parent('form').serializeObject()),
+      cache: false,
+      dataType: 'json',
+      contentType: "application/json; charset=utf-8",
+      error: function (err) {
+        alert("Signup error. No problem, just tweet with #tacoconfslc to let us know you're coming.");
+      },
+      success: function () {
+        alert("You're signed up!");
+      }
+    });
+    return false;
+  });
+
+});
