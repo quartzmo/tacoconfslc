@@ -47,6 +47,7 @@ ShowView = Backbone.View.extend
 
   template: _.template '''
       <img title="<%= get('name') %>" alt="<%= get('name') %>" src="http://2.gravatar.com/avatar/<%= get('email_hash') %>">
+      <div class="avatar-name"><%= get('name') %></div>
   '''
 
   render: ->
@@ -73,6 +74,7 @@ $ ->
         $(':input', 'form').val('')
         $('.subscriber-errors').show().html "Success!"
       error: (model, resp) ->
+        console.log(resp)
         code = JSON.parse(resp.responseText).error
         message = if code is 11000 then "Email has already been submitted." else "There was an unknown error."
         $('.subscriber-errors').show().html message

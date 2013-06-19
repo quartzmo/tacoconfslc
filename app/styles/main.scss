@@ -99,6 +99,18 @@ a {
 .avatar {
   float: left;
   margin: 10px;
+}
+
+.avatar .avatar-name {
+  color: #ccc;
+  line-height: 17px;
+  font-size: 11px;
+  width: 80px;
+  max-width: 80px;
+  overflow: hidden;
+}
+
+.avatar img {
   background-color: white;
 }
 
