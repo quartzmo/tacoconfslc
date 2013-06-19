@@ -23,6 +23,35 @@ module.exports = function (grunt) {
     };
 
     grunt.initConfig({
+        config: {
+          dev: {
+            options: {
+              variables: {
+                'api_host': 'localhost:5000'
+              }
+            }
+          },
+          prod: {
+            options: {
+              variables: {
+                'api_host': 'tacoconfslc-api.herokuapp.com'
+              }
+            }
+          }
+        },
+        replace: {
+          dist: {
+            options: {
+              variables: {
+                'api_host': '<%= grunt.config.get("api_host") %>'
+              },
+              force: true
+            },
+            files: [
+              {expand: true, flatten: true, src: ['app/config/variables.coffee'], dest: 'app/scripts'}
+            ]
+          }
+        },
         yeoman: yeomanConfig,
         watch: {
             options: {
@@ -332,4 +361,10 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
+
+    // development
+    grunt.registerTask('dev', ['config:dev', 'replace']);
+
+    // production
+    grunt.registerTask('prod', ['config:prod', 'replace']);
 };

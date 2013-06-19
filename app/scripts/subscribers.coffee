@@ -15,9 +15,9 @@ Subscriber = Backbone.Model.extend
   validate: (attrs) ->
     return "'name' and 'email' cannot both be blank" unless attrs.name.length > 1 or attrs.email.length > 1
 
-Subscribers = Backbone.Collection.extend
+window.Subscribers = Subscribers = Backbone.Collection.extend
   model: Subscriber
-  url: 'http://localhost:5000/subscribers'
+  url: "http://#{window.config.api_host}/subscribers"
 
 IndexView = Backbone.View.extend
   el: '.avatars'
