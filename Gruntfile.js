@@ -329,6 +329,7 @@ module.exports = function (grunt) {
         }
 
         grunt.task.run([
+            'dev',
             'clean:server',
             'concurrent:server',
             'connect:livereload',
@@ -345,6 +346,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('build', [
+        'prod',
         'clean:dist',
         'useminPrepare',
         'concurrent:dist',
