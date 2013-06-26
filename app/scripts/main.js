@@ -3,7 +3,7 @@
 */
 $(function() {
     var now = new Date();
-    var countTo = new Date(2013, 6-1, 22, 11, 30);
+    var countTo = new Date(2014, 5-1, 3, 11, 30);
     $('.timer').countdown(countTo, function(event) {
         var $this = $(this);
         switch(event.type) {

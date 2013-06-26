@@ -57,9 +57,9 @@ ShowView = Backbone.View.extend
 window.subscribers = subscribers = new Subscribers()
 
 $ ->
-  window.indexView = indexView = new IndexView collection: subscribers
+#  window.indexView = indexView = new IndexView collection: subscribers
 
-  subscribers.fetch()
+#  subscribers.fetch()
 
   $('form button[type="submit"]').bind 'click', (evt) ->
     evt.preventDefault()
